@@ -2,12 +2,18 @@
 id: otpiriee
 title: Mermaid Testing
 file_version: 1.1.3
-app_version: 1.11.9
+app_version: 1.12.0
 ---
 
-<br/>
-
-<br/>
+This code snippet is configuring TypeScript to include all Vue files in the `src/components` directory and its subdirectories, while excluding the `vite.config.ts` file.
+<!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
+### 📄 vite.config.ts
+```typescript
+14           typescript({
+15             include: ['src/components/**/*.vue'],
+16             exclude: ['vite.config.ts'],
+17           }),
+```
 
 <br/>
 
@@ -18,12 +24,12 @@ CUSTOMER }|..|{ DELIVERY-ADDRESS : has
 CUSTOMER ||--o{ ORDER : places
 CUSTOMER ||--o{ INVOICE : "liable for"
 DELIVERY-ADDRESS ||--o{ ORDER : receives
-INVOICE ||--|{ ORDER : covers
+`vitejs` ||--|{ ORDER : covers
 ORDER ||--|{ ORDER-ITEM : includes
 PRODUCT-CATEGORY ||--|{ PRODUCT : contains
 PRODUCT ||--o{ ORDER-ITEM : "ordered in"
 ```
-<!--MCONTENT {content: "erDiagram<br/>\nCUSTOMER }|..|{ DELIVERY-ADDRESS : has<br/>\nCUSTOMER ||--o{ ORDER : places<br/>\nCUSTOMER ||--o{ INVOICE : \"liable for\"<br/>\nDELIVERY-ADDRESS ||--o{ ORDER : receives<br/>\nINVOICE ||--|{ ORDER : covers<br/>\nORDER ||--|{ ORDER-ITEM : includes<br/>\nPRODUCT-CATEGORY ||--|{ PRODUCT : contains<br/>\nPRODUCT ||--o{ ORDER-ITEM : \"ordered in\""} --->
+<!--MCONTENT {content: "erDiagram<br/>\nCUSTOMER }|..|{ DELIVERY-ADDRESS : has<br/>\nCUSTOMER ||--o{ ORDER : places<br/>\nCUSTOMER ||--o{ INVOICE : \"liable for\"<br/>\nDELIVERY-ADDRESS ||--o{ ORDER : receives<br/>\n`vitejs`<swm-token data-swm-token=\":vite.config.ts:3:8:8:`import vue from &#39;@vitejs/plugin-vue&#39;;`\"/> ||--|{ ORDER : covers<br/>\nORDER ||--|{ ORDER-ITEM : includes<br/>\nPRODUCT-CATEGORY ||--|{ PRODUCT : contains<br/>\nPRODUCT ||--o{ ORDER-ITEM : \"ordered in\""} --->
 
 <br/>
 
