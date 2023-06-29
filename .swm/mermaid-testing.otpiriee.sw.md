@@ -10,9 +10,8 @@ This code snippet is configuring TypeScript to include all Vue files in the `src
 ### 📄 vite.config.ts
 ```typescript
 14           typescript({
-15             include: ['dist/components/**/*.vue'],
-16             exclude: ['vite.config.ts'],
-17           }),
+15             exclude: ['vite.config.ts'],
+16           }),
 ```
 
 <br/>
@@ -24,12 +23,12 @@ CUSTOMER }|..|{ DELIVERY-ADDRESS : has
 CUSTOMER ||--o{ ORDER : places
 CUSTOMER ||--o{ INVOICE : "liable for"
 DELIVERY-ADDRESS ||--o{ ORDER : receives
-"`INVOICE (``dist/components`)" ||--|{ ORDER : covers
+"`INVOICE (dist&amp;#x2f;components`)" ||--|{ ORDER : covers
 ORDER ||--|{ ORDER-ITEM : includes
 PRODUCT-CATEGORY ||--|{ PRODUCT : contains
 PRODUCT ||--o{ ORDER-ITEM : "ordered in"
 ```
-<!--MCONTENT {content: "erDiagram<br/>\nCUSTOMER }|..|{ DELIVERY-ADDRESS : has<br/>\nCUSTOMER ||--o{ ORDER : places<br/>\nCUSTOMER ||--o{ INVOICE : \"liable for\"<br/>\nDELIVERY-ADDRESS ||--o{ ORDER : receives<br/>\n\"`INVOICE (``dist/components`<swm-token data-swm-token=\":vite.config.ts:15:6:8:`        include: [&#39;dist/components/**/*.vue&#39;],`\"/>)\" ||--|{ ORDER : covers<br/>\nORDER ||--|{ ORDER-ITEM : includes<br/>\nPRODUCT-CATEGORY ||--|{ PRODUCT : contains<br/>\nPRODUCT ||--o{ ORDER-ITEM : \"ordered in\""} --->
+<!--MCONTENT {content: "erDiagram<br/>\nCUSTOMER }|..|{ DELIVERY-ADDRESS : has<br/>\nCUSTOMER ||--o{ ORDER : places<br/>\nCUSTOMER ||--o{ INVOICE : \"liable for\"<br/>\nDELIVERY-ADDRESS ||--o{ ORDER : receives<br/>\n\"`INVOICE (dist&amp;#x2f;components`)\" ||--|{ ORDER : covers<br/>\nORDER ||--|{ ORDER-ITEM : includes<br/>\nPRODUCT-CATEGORY ||--|{ PRODUCT : contains<br/>\nPRODUCT ||--o{ ORDER-ITEM : \"ordered in\""} --->
 
 <br/>
 
