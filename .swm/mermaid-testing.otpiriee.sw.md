@@ -24,12 +24,12 @@ CUSTOMER }|..|{ DELIVERY-ADDRESS : has
 CUSTOMER ||--o{ ORDER : places
 CUSTOMER ||--o{ INVOICE : "liable for"
 DELIVERY-ADDRESS ||--o{ ORDER : receives
-"`INVOICE (``vue`)" ||--|{ ORDER : covers
+"`INVOICE (``src/components`)" ||--|{ ORDER : covers
 ORDER ||--|{ ORDER-ITEM : includes
 PRODUCT-CATEGORY ||--|{ PRODUCT : contains
 PRODUCT ||--o{ ORDER-ITEM : "ordered in"
 ```
-<!--MCONTENT {content: "erDiagram<br/>\nCUSTOMER }|..|{ DELIVERY-ADDRESS : has<br/>\nCUSTOMER ||--o{ ORDER : places<br/>\nCUSTOMER ||--o{ INVOICE : \"liable for\"<br/>\nDELIVERY-ADDRESS ||--o{ ORDER : receives<br/>\n\"`INVOICE (``vue`<swm-token data-swm-token=\":vite.config.ts:3:2:2:`import vue from &#39;@vitejs/plugin-vue&#39;;`\"/>)\" ||--|{ ORDER : covers<br/>\nORDER ||--|{ ORDER-ITEM : includes<br/>\nPRODUCT-CATEGORY ||--|{ PRODUCT : contains<br/>\nPRODUCT ||--o{ ORDER-ITEM : \"ordered in\""} --->
+<!--MCONTENT {content: "erDiagram<br/>\nCUSTOMER }|..|{ DELIVERY-ADDRESS : has<br/>\nCUSTOMER ||--o{ ORDER : places<br/>\nCUSTOMER ||--o{ INVOICE : \"liable for\"<br/>\nDELIVERY-ADDRESS ||--o{ ORDER : receives<br/>\n\"`INVOICE (``src/components`<swm-token data-swm-token=\":vite.config.ts:15:6:8:`        include: [&#39;src/components/**/*.vue&#39;],`\"/>)\" ||--|{ ORDER : covers<br/>\nORDER ||--|{ ORDER-ITEM : includes<br/>\nPRODUCT-CATEGORY ||--|{ PRODUCT : contains<br/>\nPRODUCT ||--o{ ORDER-ITEM : \"ordered in\""} --->
 
 <br/>
 
