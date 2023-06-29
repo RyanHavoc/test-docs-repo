@@ -12,7 +12,6 @@ export default defineConfig(async ({ mode }) => {
         insertTypesEntry: true,
       }),
       typescript({
-        include: ['dist/components/**/*.vue'],
         exclude: ['vite.config.ts'],
       }),
     ],
