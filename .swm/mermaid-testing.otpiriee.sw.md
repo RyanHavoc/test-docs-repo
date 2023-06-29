@@ -5,7 +5,13 @@ file_version: 1.1.3
 app_version: 1.11.9
 ---
 
-<!--MERMAID {width:50}-->
+<br/>
+
+<br/>
+
+<br/>
+
+<!--MERMAID {width:100}-->
 ```mermaid
 erDiagram
 CUSTOMER }|..|{ DELIVERY-ADDRESS : has
