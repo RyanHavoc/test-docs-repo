@@ -9,7 +9,7 @@ Testing [My first doc](my-first-doc.rcpng68b.sw.md) testing
 
 <br/>
 
-<!--MERMAID {width:100}-->
+<!--MERMAID {width:50}-->
 ```mermaid
 erDiagram
 CUSTOMER }|..|{ DELIVERY-ADDRESS : has
