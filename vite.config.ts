@@ -48,7 +48,6 @@ export default defineConfig(async ({ mode }) => {
     },
     test: {
       foo: 'bar',
-      globals: true,
     },
     typesDir: 'dist/types',
     define: {
