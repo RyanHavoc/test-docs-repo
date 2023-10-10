@@ -11,7 +11,7 @@ function foo(bar: string) {
 export default defineConfig(async ({ mode }) => {
   return {
     plugins: [
-      vue3(),
+      vue(),
       dts({
         insertTypesEntry: true,
       }),
@@ -47,7 +47,7 @@ export default defineConfig(async ({ mode }) => {
       sourcemap: true,
     },
     test: {
-      foo: 'bar',
+      globals: true,
     },
     typesDir: 'dist/types',
     define: {
