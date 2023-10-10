@@ -4,10 +4,14 @@ import vue from '@vitejs/plugin-vue';
 import dts from 'vite-plugin-dts';
 import typescript from '@rollup/plugin-typescript';
 
+function foo(bar: string) {
+  return bar;
+}
+
 export default defineConfig(async ({ mode }) => {
   return {
     plugins: [
-      vue(),
+      vue3(),
       dts({
         insertTypesEntry: true,
       }),
@@ -43,6 +47,7 @@ export default defineConfig(async ({ mode }) => {
       sourcemap: true,
     },
     test: {
+      foo: 'bar',
       globals: true,
     },
     typesDir: 'dist/types',
